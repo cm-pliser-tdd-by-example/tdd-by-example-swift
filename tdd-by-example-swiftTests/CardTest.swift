@@ -1,5 +1,5 @@
 //
-//  CardSpec.swift
+//  CardTest.swift
 //  tdd-by-example-swiftTests
 //
 //  Copyright © 2017年 cm-pliser. All rights reserved.
@@ -9,7 +9,7 @@ import Quick
 import Nimble
 @testable import tdd_by_example_swift
 
-class CardSpec: QuickSpec {
+class CardTest: QuickSpec {
     
     override func spec() {
         describe("カードのイニシャライザで") {
