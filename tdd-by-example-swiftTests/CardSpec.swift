@@ -12,10 +12,11 @@ import Nimble
 class CardSpec: QuickSpec {
     
     override func spec() {
-        describe("") {
-            context("") {
-                it("") {
-                    
+        describe("カードのイニシャライザで") {
+            context("正しいスートと数字を渡したとき") {
+                it("インスタンスが生成できること") {
+                    let card = Card(suit: "heart", number: 4)
+                    expect(card).to(beAKindOf(Card.self))
                 }
             }
         }
