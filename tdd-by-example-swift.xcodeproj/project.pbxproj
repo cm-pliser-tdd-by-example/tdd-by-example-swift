@@ -12,13 +12,11 @@
 		C5CBE7445C9C8D6997643066 /* Pods_tdd_by_example_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0042A7C2F4375AADCD5A74 /* Pods_tdd_by_example_swift.framework */; };
 		E40678CA1FA6C63600955667 /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678C91FA6C63600955667 /* MoneyTest.swift */; };
 		E40678CC1FA6C66E00955667 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678CB1FA6C66E00955667 /* Money.swift */; };
-		E4BAF3621FA6BF1100EEE593 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAF3611FA6BF1100EEE593 /* Card.swift */; };
 		E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180641FA6B325005D1668 /* AppDelegate.swift */; };
 		E4D180671FA6B325005D1668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180661FA6B325005D1668 /* ViewController.swift */; };
 		E4D1806A1FA6B325005D1668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D180681FA6B325005D1668 /* Main.storyboard */; };
 		E4D1806C1FA6B325005D1668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D1806B1FA6B325005D1668 /* Assets.xcassets */; };
 		E4D1806F1FA6B325005D1668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1806D1FA6B325005D1668 /* LaunchScreen.storyboard */; };
-		E4D1807A1FA6B326005D1668 /* CardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180791FA6B326005D1668 /* CardTest.swift */; };
 		E4D180851FA6B326005D1668 /* tdd_by_example_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180841FA6B326005D1668 /* tdd_by_example_swiftUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +46,6 @@
 		DF3C2958F0956BA69AC24475 /* Pods-tdd-by-example-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-by-example-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-tdd-by-example-swift/Pods-tdd-by-example-swift.release.xcconfig"; sourceTree = "<group>"; };
 		E40678C91FA6C63600955667 /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
 		E40678CB1FA6C66E00955667 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
-		E4BAF3611FA6BF1100EEE593 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E4D180611FA6B325005D1668 /* tdd-by-example-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-by-example-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D180641FA6B325005D1668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D180661FA6B325005D1668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +54,6 @@
 		E4D1806E1FA6B325005D1668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D180701FA6B325005D1668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D180751FA6B326005D1668 /* tdd-by-example-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tdd-by-example-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D180791FA6B326005D1668 /* CardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTest.swift; sourceTree = "<group>"; };
 		E4D1807B1FA6B326005D1668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D180801FA6B326005D1668 /* tdd-by-example-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tdd-by-example-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D180841FA6B326005D1668 /* tdd_by_example_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdd_by_example_swiftUITests.swift; sourceTree = "<group>"; };
@@ -143,7 +139,6 @@
 		E4D180631FA6B325005D1668 /* tdd-by-example-swift */ = {
 			isa = PBXGroup;
 			children = (
-				E4BAF3611FA6BF1100EEE593 /* Card.swift */,
 				E40678CB1FA6C66E00955667 /* Money.swift */,
 				E4D180641FA6B325005D1668 /* AppDelegate.swift */,
 				E4D180661FA6B325005D1668 /* ViewController.swift */,
@@ -158,7 +153,6 @@
 		E4D180781FA6B326005D1668 /* tdd-by-example-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				E4D180791FA6B326005D1668 /* CardTest.swift */,
 				E40678C91FA6C63600955667 /* MoneyTest.swift */,
 				E4D1807B1FA6B326005D1668 /* Info.plist */,
 			);
@@ -458,7 +452,6 @@
 				E4D180671FA6B325005D1668 /* ViewController.swift in Sources */,
 				E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */,
 				E40678CC1FA6C66E00955667 /* Money.swift in Sources */,
-				E4BAF3621FA6BF1100EEE593 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +460,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40678CA1FA6C63600955667 /* MoneyTest.swift in Sources */,
-				E4D1807A1FA6B326005D1668 /* CardTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
