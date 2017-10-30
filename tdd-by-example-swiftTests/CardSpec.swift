@@ -15,7 +15,7 @@ class CardSpec: QuickSpec {
         describe("カードのイニシャライザで") {
             context("正しいスートと数字を渡したとき") {
                 it("インスタンスが生成できること") {
-                    let card = Card(suit: "heart", number: 4)
+                    let card = Card(suit: .hearts, number: 4)
                     expect(card).to(beAKindOf(Card.self))
                 }
             }

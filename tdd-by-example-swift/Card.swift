@@ -9,7 +9,11 @@ import Foundation
 
 struct Card {
     
-    init?(suit: String, number: Int) {
+    enum Suit {
+        case spades, hearts, diamonds, clubs
+    }
+    
+    init?(suit: Card.Suit, number: Int) {
         
     }
 }
