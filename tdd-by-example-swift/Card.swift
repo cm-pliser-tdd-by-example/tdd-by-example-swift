@@ -9,4 +9,7 @@ import Foundation
 
 struct Card {
     
+    init?(suit: String, number: Int) {
+        
+    }
 }
