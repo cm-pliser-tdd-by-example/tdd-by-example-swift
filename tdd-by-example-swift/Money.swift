@@ -16,6 +16,6 @@ class Doller {
     }
     
     func times(_ multiplier: Int) {
-        amount = amount * 2
+        amount *= multiplier
     }
 }
