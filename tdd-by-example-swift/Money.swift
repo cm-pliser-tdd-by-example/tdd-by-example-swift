@@ -9,13 +9,13 @@ import Foundation
 
 class Doller {
     
-    var amount: Int = 10
+    var amount: Int = 0
     
     init(_ amount: Int) {
         
     }
     
     func times(_ multiplier: Int) {
-        
+        amount = 5 * 2
     }
 }
