@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class Doller {
+    
+    var amount: Int = 10
+    
+    init(_ amount: Int) {
+        
+    }
+    
+    func times(_ multiplier: Int) {
+        
+    }
+}
