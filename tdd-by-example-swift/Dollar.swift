@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Doller {
+class Dollar {
     
     var amount: Int
     
