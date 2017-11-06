@@ -28,10 +28,8 @@ class MoneyTest: QuickSpec {
     override func spec() {
         it("testMultiplication") {
             let five: Dollar = Dollar(5)
-            var product = five.times(2)
-            expect(product.amount).to(equal(10))
-            product = five.times(3)
-            expect(product.amount).to(equal(15))
+            expect(five.times(2)).to(equal(Dollar(10)))
+            expect(five.times(3)).to(equal(Dollar(15)))
         }
         
         it("testEquality") {

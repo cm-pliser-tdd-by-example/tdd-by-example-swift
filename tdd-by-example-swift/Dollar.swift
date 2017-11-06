@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Dollar {
+struct Dollar: Equatable {
     
-    var amount: Int
+    private let amount: Int
     
     init(_ amount: Int) {
         self.amount = amount
@@ -21,8 +21,8 @@ class Dollar {
         return Dollar(amount * multiplier)
     }
     
-    // Swiftの場合、本来はEquatableプロトコルを使うべき
-    func equals(_ dollar: Dollar) -> Bool {
-        return amount == dollar.amount
+    // 本の中ではJavaなので、equalsを使っている
+    public static func ==(lhs: Dollar, rhs: Dollar) -> Bool {
+        return lhs.amount == rhs.amount
     }
 }
