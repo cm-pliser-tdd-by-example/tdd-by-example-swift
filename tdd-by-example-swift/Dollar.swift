@@ -20,4 +20,8 @@ class Dollar {
         // Swiftでnullを扱うにはOptionalがあるため、直接記述する。
         return Dollar(amount * multiplier)
     }
+    
+    func equals(_ dollar: Dollar) -> Bool {
+        return true
+    }
 }

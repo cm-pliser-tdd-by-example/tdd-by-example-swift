@@ -16,6 +16,7 @@ import Nimble
  [x] $5 * 2 = $10
  [ ] amountをprivateにする
  [x] Dollarの副作用どうする?
+ [ ] equals()
  [ ] Moneyの丸め処理をどうする?
  */
 
@@ -28,6 +29,10 @@ class MoneyTest: QuickSpec {
             expect(product.amount).to(equal(10))
             product = five.times(3)
             expect(product.amount).to(equal(15))
+        }
+        
+        it("testEquality") {
+            expect(Dollar(5).equals(Dollar(5))).to(beTrue())
         }
     }
 }
