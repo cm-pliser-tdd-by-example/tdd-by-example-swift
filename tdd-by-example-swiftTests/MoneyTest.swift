@@ -18,9 +18,13 @@ import Nimble
  [x] Dollarの副作用どうする?
  [ ] Moneyの丸め処理をどうする?
  [x] equals()
- [ ] hashCod()
+ [ ] hashCode()
  [ ] nullとの等価性比較
  [ ] 他のオブジェクトとの等価生比較
+ [x] 5 CHF * 2 = 10 CHF
+ [ ] DollarとFrancの比較
+ [ ] equalsの一般化
+ [ ] timesの一般化
  */
 
 class MoneyTest: QuickSpec {
