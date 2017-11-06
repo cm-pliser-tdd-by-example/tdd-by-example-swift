@@ -33,6 +33,7 @@ class MoneyTest: QuickSpec {
         
         it("testEquality") {
             expect(Dollar(5).equals(Dollar(5))).to(beTrue())
+            expect(Dollar(5).equals(Dollar(6))).to(beFalse())
         }
     }
 }
