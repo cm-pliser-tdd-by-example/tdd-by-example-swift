@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26279056CD0E05E00E81F8EE /* Pods_tdd_by_example_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8610C8055A45F8ADE59ED639 /* Pods_tdd_by_example_swiftTests.framework */; };
 		756251127BAA117A9FFB6217 /* Pods_tdd_by_example_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751F8647377361BB380953EE /* Pods_tdd_by_example_swiftUITests.framework */; };
+		95677CF91FB0815900DE7E96 /* Franc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95677CF81FB0815900DE7E96 /* Franc.swift */; };
 		C5CBE7445C9C8D6997643066 /* Pods_tdd_by_example_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0042A7C2F4375AADCD5A74 /* Pods_tdd_by_example_swift.framework */; };
 		E40678CA1FA6C63600955667 /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678C91FA6C63600955667 /* MoneyTest.swift */; };
 		E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678CB1FA6C66E00955667 /* Dollar.swift */; };
@@ -42,6 +43,7 @@
 		751F8647377361BB380953EE /* Pods_tdd_by_example_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdd_by_example_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F9D1C654765D8CC19B6245 /* Pods-tdd-by-example-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-by-example-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tdd-by-example-swift/Pods-tdd-by-example-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		8610C8055A45F8ADE59ED639 /* Pods_tdd_by_example_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdd_by_example_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95677CF81FB0815900DE7E96 /* Franc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Franc.swift; sourceTree = "<group>"; };
 		B6FF57B0CDDF2A9EC0226C26 /* Pods-tdd-by-example-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-by-example-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tdd-by-example-swiftUITests/Pods-tdd-by-example-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF3C2958F0956BA69AC24475 /* Pods-tdd-by-example-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-by-example-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-tdd-by-example-swift/Pods-tdd-by-example-swift.release.xcconfig"; sourceTree = "<group>"; };
 		E40678C91FA6C63600955667 /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				E40678CB1FA6C66E00955667 /* Dollar.swift */,
+				95677CF81FB0815900DE7E96 /* Franc.swift */,
 				E4D180641FA6B325005D1668 /* AppDelegate.swift */,
 				E4D180661FA6B325005D1668 /* ViewController.swift */,
 				E4D180681FA6B325005D1668 /* Main.storyboard */,
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95677CF91FB0815900DE7E96 /* Franc.swift in Sources */,
 				E4D180671FA6B325005D1668 /* ViewController.swift in Sources */,
 				E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */,
 				E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */,

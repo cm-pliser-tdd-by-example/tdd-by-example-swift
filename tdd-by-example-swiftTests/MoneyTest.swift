@@ -36,5 +36,11 @@ class MoneyTest: QuickSpec {
             expect(Dollar(5) == Dollar(5)).to(beTrue())
             expect(Dollar(5) == Dollar(6)).to(beFalse())
         }
+        
+        it("testFrancMultiplication") {
+            let five: Franc = Franc(5)
+            expect(five.times(2)).to(equal(Franc(10)))
+            expect(five.times(3)).to(equal(Franc(15)))
+        }
     }
 }
