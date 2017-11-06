@@ -15,7 +15,7 @@ import Nimble
  [ ] $5 + 10CHF = $10
  [x] $5 * 2 = $10
  [ ] amountをprivateにする
- [ ] Dollarの副作用どうする?
+ [x] Dollarの副作用どうする?
  [ ] Moneyの丸め処理をどうする?
  */
 
@@ -24,8 +24,10 @@ class MoneyTest: QuickSpec {
     override func spec() {
         it("testMultiplication") {
             let five: Dollar = Dollar(5)
-            five.times(2)
-            expect(five.amount).to(equal(10))
+            var product = five.times(2)
+            expect(product.amount).to(equal(10))
+            product = five.times(3)
+            expect(product.amount).to(equal(15))
         }
     }
 }
