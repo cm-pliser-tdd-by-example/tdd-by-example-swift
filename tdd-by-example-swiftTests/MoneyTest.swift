@@ -16,8 +16,11 @@ import Nimble
  [x] $5 * 2 = $10
  [ ] amountをprivateにする
  [x] Dollarの副作用どうする?
- [ ] equals()
  [ ] Moneyの丸め処理をどうする?
+ [x] equals()
+ [ ] hashCod()
+ [ ] nullとの等価性比較
+ [ ] 他のオブジェクトとの等価生比較
  */
 
 class MoneyTest: QuickSpec {
