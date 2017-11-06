@@ -21,7 +21,8 @@ class Dollar {
         return Dollar(amount * multiplier)
     }
     
+    // Swiftの場合、本来はEquatableプロトコルを使うべき
     func equals(_ dollar: Dollar) -> Bool {
-        return true
+        return amount == dollar.amount
     }
 }
