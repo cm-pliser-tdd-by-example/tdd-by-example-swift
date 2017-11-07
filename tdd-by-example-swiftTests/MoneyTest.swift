@@ -32,16 +32,16 @@ class MoneyTest: QuickSpec {
     override func spec() {
         it("testMultiplication") {
             let five: Money = Money.doller(5)
-            expect(five.times(2)).to(equal(Dollar(10)))
-            expect(five.times(3)).to(equal(Dollar(15)))
+            expect(five.times(2)).to(equal(Money.doller(10)))
+            expect(five.times(3)).to(equal(Money.doller(15)))
         }
         
         it("testEquality") {
-            expect(Dollar(5) == Dollar(5)).to(beTrue())
-            expect(Dollar(5) == Dollar(6)).to(beFalse())
+            expect(Money.doller(5) == Money.doller(5)).to(beTrue())
+            expect(Money.doller(5) == Money.doller(6)).to(beFalse())
             expect(Franc(5) == Franc(5)).to(beTrue())
             expect(Franc(5) == Franc(6)).to(beFalse())
-            expect(Franc(5) == Dollar(5)).to(beFalse())
+            expect(Franc(5) == Money.doller(5)).to(beFalse())
         }
         
         it("testFrancMultiplication") {
