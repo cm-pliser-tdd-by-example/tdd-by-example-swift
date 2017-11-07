@@ -14,7 +14,8 @@ class Money: Equatable {
     
     // 本の中ではJavaなので、equalsを使っている
     public static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.amount == rhs.amount
+        return (lhs.amount == rhs.amount) &&
+            String(describing: type(of: lhs)) == String(describing: type(of: rhs))
     }
     
     class func doller(_ amount: Int) -> Money {
