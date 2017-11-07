@@ -17,8 +17,12 @@ class Money: Equatable {
         return lhs.amount == rhs.amount
     }
     
-    class func doller(_ amount: Int) -> Dollar {
+    class func doller(_ amount: Int) -> Money {
         return Dollar(amount)
+    }
+    
+    class func franc(_ amount: Int) -> Money {
+        return Franc(amount)
     }
     
     func times(_ multiplier: Int) -> Money {
