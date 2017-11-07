@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dollar: Equatable {
+class Dollar: Money, Equatable {
     
     private let amount: Int
     
