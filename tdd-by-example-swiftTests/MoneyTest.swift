@@ -25,6 +25,9 @@ import Nimble
  [ ] DollarとFrancの比較
  [x] equalsの一般化
  [ ] timesの一般化
+ [x] FrancとDollerを比較する
+ [ ] 通過の概念
+ [ ] testFrancMultiplicationを削除する
  */
 
 class MoneyTest: QuickSpec {
