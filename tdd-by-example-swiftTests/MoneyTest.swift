@@ -39,6 +39,8 @@ class MoneyTest: QuickSpec {
         it("testEquality") {
             expect(Dollar(5) == Dollar(5)).to(beTrue())
             expect(Dollar(5) == Dollar(6)).to(beFalse())
+            expect(Franc(5) == Franc(5)).to(beTrue())
+            expect(Franc(5) == Franc(6)).to(beFalse())
         }
         
         it("testFrancMultiplication") {
