@@ -9,7 +9,10 @@ import Foundation
 
 class Dollar: Money {
     
+    private let _currency: String
+    
     init(_ amount: Int) {
+        self._currency = "USD"
         super.init()
         self.amount = amount
     }
@@ -21,6 +24,6 @@ class Dollar: Money {
     }
     
     override var currency: String {
-        return "USD"
+        return _currency
     }
 }

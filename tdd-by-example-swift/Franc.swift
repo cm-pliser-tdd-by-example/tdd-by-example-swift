@@ -10,7 +10,10 @@ import Foundation
 
 class Franc: Money {
     
+    private let _currency: String
+    
     init(_ amount: Int) {
+        self._currency = "CHF"
         super.init()
         self.amount = amount
     }
@@ -22,6 +25,6 @@ class Franc: Money {
     }
     
     override var currency: String {
-        return "CHF"
+        return _currency
     }
 }
