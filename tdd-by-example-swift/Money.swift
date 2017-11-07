@@ -10,9 +10,13 @@ import Foundation
 class Money: Equatable {
     
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
-    var amount: Int = 0
+    let amount: Int
+    let currency: String
     
-    var currency: String? = nil
+    init(_ amount: Int, _ currency: String) {
+        self.amount = amount
+        self.currency = currency
+    }
     
     // 本の中ではJavaなので、equalsを使っている
     public static func ==(lhs: Money, rhs: Money) -> Bool {
