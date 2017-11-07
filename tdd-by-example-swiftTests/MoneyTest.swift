@@ -14,18 +14,37 @@ import Nimble
  
  [ ] $5 + 10CHF = $10
  [x] $5 * 2 = $10
- [ ] amountをprivateにする
- [ ] Dollerの副作用どうする?
+ [x] amountをprivateにする
+ [x] Dollarの副作用どうする?
  [ ] Moneyの丸め処理をどうする?
+ [x] equals()
+ [ ] hashCode()
+ [ ] nullとの等価性比較
+ [ ] 他のオブジェクトとの等価生比較
+ [x] 5 CHF * 2 = 10 CHF
+ [ ] DollarとFrancの比較
+ [ ] equalsの一般化
+ [ ] timesの一般化
  */
 
 class MoneyTest: QuickSpec {
     
     override func spec() {
         it("testMultiplication") {
-            let five: Doller = Doller(5)
-            five.times(2)
-            expect(five.amount).to(equal(10))
+            let five: Dollar = Dollar(5)
+            expect(five.times(2)).to(equal(Dollar(10)))
+            expect(five.times(3)).to(equal(Dollar(15)))
+        }
+        
+        it("testEquality") {
+            expect(Dollar(5) == Dollar(5)).to(beTrue())
+            expect(Dollar(5) == Dollar(6)).to(beFalse())
+        }
+        
+        it("testFrancMultiplication") {
+            let five: Franc = Franc(5)
+            expect(five.times(2)).to(equal(Franc(10)))
+            expect(five.times(3)).to(equal(Franc(15)))
         }
     }
 }
