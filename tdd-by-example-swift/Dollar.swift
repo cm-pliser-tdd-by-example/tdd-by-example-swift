@@ -14,7 +14,7 @@ class Dollar: Money {
         self.amount = amount
     }
     
-    func times(_ multiplier: Int) -> Dollar {
+    func times(_ multiplier: Int) -> Money {
         // 本の中では一度 return null してから実装を修正するステップを踏んでいるが、
         // Swiftでnullを扱うにはOptionalがあるため、直接記述する。
         return Dollar(amount * multiplier)
