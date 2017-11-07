@@ -16,4 +16,8 @@ class Money: Equatable {
     public static func ==(lhs: Money, rhs: Money) -> Bool {
         return lhs.amount == rhs.amount
     }
+    
+    class func doller(_ amount: Int) -> Dollar {
+        return Dollar(amount)
+    }
 }
