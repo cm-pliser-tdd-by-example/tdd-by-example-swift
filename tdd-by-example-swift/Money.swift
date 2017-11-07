@@ -28,4 +28,8 @@ class Money: Equatable {
     func times(_ multiplier: Int) -> Money {
         fatalError() // abstract
     }
+    
+    var currency: String {
+        fatalError() // abstract
+    }
 }

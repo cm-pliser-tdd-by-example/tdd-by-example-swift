@@ -20,4 +20,8 @@ class Franc: Money {
         // Swiftでnullを扱うにはOptionalがあるため、直接記述する。
         return Franc(amount * multiplier)
     }
+    
+    override var currency: String {
+        return "CHF"
+    }
 }
