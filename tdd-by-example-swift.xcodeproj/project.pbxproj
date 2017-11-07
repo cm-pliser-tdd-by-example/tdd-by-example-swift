@@ -13,6 +13,7 @@
 		C5CBE7445C9C8D6997643066 /* Pods_tdd_by_example_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0042A7C2F4375AADCD5A74 /* Pods_tdd_by_example_swift.framework */; };
 		E40678CA1FA6C63600955667 /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678C91FA6C63600955667 /* MoneyTest.swift */; };
 		E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678CB1FA6C66E00955667 /* Dollar.swift */; };
+		E45036871FB1422400C3225A /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45036861FB1422400C3225A /* Money.swift */; };
 		E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180641FA6B325005D1668 /* AppDelegate.swift */; };
 		E4D180671FA6B325005D1668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180661FA6B325005D1668 /* ViewController.swift */; };
 		E4D1806A1FA6B325005D1668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D180681FA6B325005D1668 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		DF3C2958F0956BA69AC24475 /* Pods-tdd-by-example-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd-by-example-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-tdd-by-example-swift/Pods-tdd-by-example-swift.release.xcconfig"; sourceTree = "<group>"; };
 		E40678C91FA6C63600955667 /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
 		E40678CB1FA6C66E00955667 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		E45036861FB1422400C3225A /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		E4D180611FA6B325005D1668 /* tdd-by-example-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-by-example-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D180641FA6B325005D1668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D180661FA6B325005D1668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		E4D180631FA6B325005D1668 /* tdd-by-example-swift */ = {
 			isa = PBXGroup;
 			children = (
+				E45036861FB1422400C3225A /* Money.swift */,
 				E40678CB1FA6C66E00955667 /* Dollar.swift */,
 				95677CF81FB0815900DE7E96 /* Franc.swift */,
 				E4D180641FA6B325005D1668 /* AppDelegate.swift */,
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95677CF91FB0815900DE7E96 /* Franc.swift in Sources */,
+				E45036871FB1422400C3225A /* Money.swift in Sources */,
 				E4D180671FA6B325005D1668 /* ViewController.swift in Sources */,
 				E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */,
 				E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */,
