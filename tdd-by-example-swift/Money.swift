@@ -20,4 +20,8 @@ class Money: Equatable {
     class func doller(_ amount: Int) -> Dollar {
         return Dollar(amount)
     }
+    
+    func times(_ multiplier: Int) -> Money {
+        fatalError() // abstract
+    }
 }
