@@ -21,11 +21,11 @@ class Money: Equatable {
     }
     
     class func doller(_ amount: Int) -> Money {
-        return Dollar(amount)
+        return Dollar(amount, "USD")
     }
     
     class func franc(_ amount: Int) -> Money {
-        return Franc(amount, nil)
+        return Franc(amount, "CHF")
     }
     
     func times(_ multiplier: Int) -> Money {
