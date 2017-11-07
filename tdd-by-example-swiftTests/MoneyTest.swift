@@ -22,11 +22,11 @@ import Nimble
  [ ] nullとの等価性比較
  [ ] 他のオブジェクトとの等価生比較
  [x] 5 CHF * 2 = 10 CHF
- [ ] DollarとFrancの比較
+ [ ] DollarとFrancの重複
  [x] equalsの一般化
  [ ] timesの一般化
  [x] FrancとDollerを比較する
- [ ] 通過の概念
+ [x] 通過の概念
  [ ] testFrancMultiplicationを削除する
  */
 
