@@ -8,11 +8,10 @@
 
 import Foundation
 
-struct Franc: Equatable {
-    
-    private let amount: Int
+class Franc: Money {
     
     init(_ amount: Int) {
+        super.init()
         self.amount = amount
     }
     
@@ -20,10 +19,5 @@ struct Franc: Equatable {
         // 本の中では一度 return null してから実装を修正するステップを踏んでいるが、
         // Swiftでnullを扱うにはOptionalがあるため、直接記述する。
         return Franc(amount * multiplier)
-    }
-    
-    // 本の中ではJavaなので、equalsを使っている
-    public static func ==(lhs: Franc, rhs: Franc) -> Bool {
-        return lhs.amount == rhs.amount
     }
 }
