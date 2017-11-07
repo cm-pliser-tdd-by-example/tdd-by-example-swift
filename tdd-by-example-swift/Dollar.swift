@@ -9,9 +9,8 @@ import Foundation
 
 class Dollar: Money, Equatable {
     
-    private let amount: Int
-    
     init(_ amount: Int) {
+        super.init()
         self.amount = amount
     }
     
