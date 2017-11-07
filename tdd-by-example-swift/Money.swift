@@ -12,6 +12,8 @@ class Money: Equatable {
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
     var amount: Int = 0
     
+    var currency: String = ""
+    
     // 本の中ではJavaなので、equalsを使っている
     public static func ==(lhs: Money, rhs: Money) -> Bool {
         return (lhs.amount == rhs.amount) &&
@@ -27,10 +29,6 @@ class Money: Equatable {
     }
     
     func times(_ multiplier: Int) -> Money {
-        fatalError() // abstract
-    }
-    
-    var currency: String {
         fatalError() // abstract
     }
 }

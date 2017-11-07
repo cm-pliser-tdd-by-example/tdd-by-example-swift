@@ -9,21 +9,15 @@ import Foundation
 
 class Dollar: Money {
     
-    private let _currency: String
-    
     init(_ amount: Int) {
-        self._currency = "USD"
         super.init()
         self.amount = amount
+        self.currency = "USD"
     }
     
     override func times(_ multiplier: Int) -> Money {
         // 本の中では一度 return null してから実装を修正するステップを踏んでいるが、
         // Swiftでnullを扱うにはOptionalがあるため、直接記述する。
         return Dollar(amount * multiplier)
-    }
-    
-    override var currency: String {
-        return _currency
     }
 }
