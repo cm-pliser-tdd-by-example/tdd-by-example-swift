@@ -39,15 +39,15 @@ class MoneyTest: QuickSpec {
         it("testEquality") {
             expect(Money.doller(5) == Money.doller(5)).to(beTrue())
             expect(Money.doller(5) == Money.doller(6)).to(beFalse())
-            expect(Franc(5) == Franc(5)).to(beTrue())
-            expect(Franc(5) == Franc(6)).to(beFalse())
-            expect(Franc(5) == Money.doller(5)).to(beFalse())
+            expect(Money.franc(5) == Money.franc(5)).to(beTrue())
+            expect(Money.franc(5) == Money.franc(6)).to(beFalse())
+            expect(Money.franc(5) == Money.doller(5)).to(beFalse())
         }
         
         it("testFrancMultiplication") {
-            let five: Franc = Franc(5)
-            expect(five.times(2)).to(equal(Franc(10)))
-            expect(five.times(3)).to(equal(Franc(15)))
+            let five: Money = Money.franc(5)
+            expect(five.times(2)).to(equal(Money.franc(10)))
+            expect(five.times(3)).to(equal(Money.franc(15)))
         }
     }
 }
