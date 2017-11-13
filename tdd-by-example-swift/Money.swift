@@ -32,7 +32,7 @@ class Money: Equatable, CustomStringConvertible {
     }
     
     func times(_ multiplier: Int) -> Money? {
-        return nil
+        return Money(amount * multiplier, currency)
     }
     
     var description: String {
