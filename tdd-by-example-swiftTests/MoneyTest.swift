@@ -22,12 +22,12 @@ import Nimble
  [ ] nullとの等価性比較
  [ ] 他のオブジェクトとの等価生比較
  [x] 5 CHF * 2 = 10 CHF
- [ ] DollarとFrancの重複
+ [x] DollarとFrancの重複
  [x] equalsの一般化
  [x] timesの一般化
  [x] FrancとDollerを比較する
  [x] 通過の概念
- [ ] testFrancMultiplicationを削除する
+ [x] testFrancMultiplicationを削除する
  */
 
 class MoneyTest: QuickSpec {
