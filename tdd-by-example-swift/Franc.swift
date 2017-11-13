@@ -8,9 +8,3 @@
 
 import Foundation
 
-class Franc: Money {
-    
-    override init(_ amount: Int, _ currency: String) {
-        super.init(amount, currency)
-    }
-}

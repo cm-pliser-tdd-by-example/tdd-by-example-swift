@@ -42,24 +42,12 @@ class MoneyTest: QuickSpec {
         it("testEquality") {
             expect(Money.doller(5) == Money.doller(5)).to(beTrue())
             expect(Money.doller(5) == Money.doller(6)).to(beFalse())
-            expect(Money.franc(5) == Money.franc(5)).to(beTrue())
-            expect(Money.franc(5) == Money.franc(6)).to(beFalse())
             expect(Money.franc(5) == Money.doller(5)).to(beFalse())
-        }
-        
-        it("testFrancMultiplication") {
-            let five: Money = Money.franc(5)
-            expect(five.times(2)).to(equal(Money.franc(10)))
-            expect(five.times(3)).to(equal(Money.franc(15)))
         }
         
         it("testCurrency") {
             expect("USD").to(equal(Money.doller(1).currency))
             expect("CHF").to(equal(Money.franc(1).currency))
-        }
-        
-        it("testDifferentClassEquality") {
-            expect(Money(10, "CHF")).to(equal(Franc(10, "CHF")))
         }
     }
 }

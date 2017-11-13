@@ -24,11 +24,11 @@ class Money: Equatable, CustomStringConvertible {
     }
     
     class func doller(_ amount: Int) -> Money {
-        return Dollar(amount, "USD")
+        return Money(amount, "USD")
     }
     
     class func franc(_ amount: Int) -> Money {
-        return Franc(amount, "CHF")
+        return Money(amount, "CHF")
     }
     
     func times(_ multiplier: Int) -> Money? {
