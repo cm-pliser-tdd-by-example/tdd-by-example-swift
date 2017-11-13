@@ -57,5 +57,9 @@ class MoneyTest: QuickSpec {
             expect("USD").to(equal(Money.doller(1).currency))
             expect("CHF").to(equal(Money.franc(1).currency))
         }
+        
+        it("testDifferentClassEquality") {
+            expect(Money(10, "CHF")).to(equal(Franc(10, "CHF")))
+        }
     }
 }
