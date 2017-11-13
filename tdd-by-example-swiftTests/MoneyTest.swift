@@ -24,7 +24,7 @@ import Nimble
  [x] 5 CHF * 2 = 10 CHF
  [ ] DollarとFrancの重複
  [x] equalsの一般化
- [ ] timesの一般化
+ [x] timesの一般化
  [x] FrancとDollerを比較する
  [x] 通過の概念
  [ ] testFrancMultiplicationを削除する
