@@ -32,7 +32,7 @@ class Money: Equatable {
         return Franc(amount, "CHF")
     }
     
-    func times(_ multiplier: Int) -> Money {
-        fatalError() // abstract
+    func times(_ multiplier: Int) -> Money? {
+        return nil
     }
 }
