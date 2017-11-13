@@ -20,8 +20,7 @@ class Money: Equatable, CustomStringConvertible {
     
     // 本の中ではJavaなので、equalsを使っている
     public static func ==(lhs: Money, rhs: Money) -> Bool {
-        return (lhs.amount == rhs.amount) &&
-            String(describing: type(of: lhs)) == String(describing: type(of: rhs))
+        return (lhs.amount == rhs.amount) && (lhs.currency == rhs.currency)
     }
     
     class func doller(_ amount: Int) -> Money {
