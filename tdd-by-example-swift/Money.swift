@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Money: Equatable {
+class Money: Equatable, CustomStringConvertible {
     
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
     let amount: Int
@@ -34,5 +34,9 @@ class Money: Equatable {
     
     func times(_ multiplier: Int) -> Money? {
         return nil
+    }
+    
+    var description: String {
+        return "\(amount) \(currency)"
     }
 }
