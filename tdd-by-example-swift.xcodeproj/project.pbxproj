@@ -14,6 +14,8 @@
 		E40678CA1FA6C63600955667 /* MoneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678C91FA6C63600955667 /* MoneyTest.swift */; };
 		E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40678CB1FA6C66E00955667 /* Dollar.swift */; };
 		E45036871FB1422400C3225A /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45036861FB1422400C3225A /* Money.swift */; };
+		E4676FF21FBB2F87004E9A85 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4676FF11FBB2F87004E9A85 /* Bank.swift */; };
+		E4676FF41FBB31A1004E9A85 /* Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4676FF31FBB31A1004E9A85 /* Expressible.swift */; };
 		E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180641FA6B325005D1668 /* AppDelegate.swift */; };
 		E4D180671FA6B325005D1668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D180661FA6B325005D1668 /* ViewController.swift */; };
 		E4D1806A1FA6B325005D1668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D180681FA6B325005D1668 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		E40678C91FA6C63600955667 /* MoneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTest.swift; sourceTree = "<group>"; };
 		E40678CB1FA6C66E00955667 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 		E45036861FB1422400C3225A /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		E4676FF11FBB2F87004E9A85 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		E4676FF31FBB31A1004E9A85 /* Expressible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expressible.swift; sourceTree = "<group>"; };
 		E4D180611FA6B325005D1668 /* tdd-by-example-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tdd-by-example-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D180641FA6B325005D1668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D180661FA6B325005D1668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				E45036861FB1422400C3225A /* Money.swift */,
+				E4676FF11FBB2F87004E9A85 /* Bank.swift */,
+				E4676FF31FBB31A1004E9A85 /* Expressible.swift */,
 				E40678CB1FA6C66E00955667 /* Dollar.swift */,
 				95677CF81FB0815900DE7E96 /* Franc.swift */,
 				E4D180641FA6B325005D1668 /* AppDelegate.swift */,
@@ -472,7 +478,9 @@
 				95677CF91FB0815900DE7E96 /* Franc.swift in Sources */,
 				E45036871FB1422400C3225A /* Money.swift in Sources */,
 				E4D180671FA6B325005D1668 /* ViewController.swift in Sources */,
+				E4676FF21FBB2F87004E9A85 /* Bank.swift in Sources */,
 				E4D180651FA6B325005D1668 /* AppDelegate.swift in Sources */,
+				E4676FF41FBB31A1004E9A85 /* Expressible.swift in Sources */,
 				E40678CC1FA6C66E00955667 /* Dollar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
