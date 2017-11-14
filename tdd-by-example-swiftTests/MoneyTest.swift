@@ -22,29 +22,40 @@ import Nimble
  [ ] nullとの等価性比較
  [ ] 他のオブジェクトとの等価生比較
  [x] 5 CHF * 2 = 10 CHF
- [ ] DollarとFrancの比較
- [ ] equalsの一般化
+ [ ] DollarとFrancの重複
+ [x] equalsの一般化
  [ ] timesの一般化
+ [x] FrancとDollerを比較する
+ [x] 通過の概念
+ [ ] testFrancMultiplicationを削除する
  */
 
 class MoneyTest: QuickSpec {
     
     override func spec() {
         it("testMultiplication") {
-            let five: Dollar = Dollar(5)
-            expect(five.times(2)).to(equal(Dollar(10)))
-            expect(five.times(3)).to(equal(Dollar(15)))
+            let five: Money = Money.doller(5)
+            expect(five.times(2)).to(equal(Money.doller(10)))
+            expect(five.times(3)).to(equal(Money.doller(15)))
         }
         
         it("testEquality") {
-            expect(Dollar(5) == Dollar(5)).to(beTrue())
-            expect(Dollar(5) == Dollar(6)).to(beFalse())
+            expect(Money.doller(5) == Money.doller(5)).to(beTrue())
+            expect(Money.doller(5) == Money.doller(6)).to(beFalse())
+            expect(Money.franc(5) == Money.franc(5)).to(beTrue())
+            expect(Money.franc(5) == Money.franc(6)).to(beFalse())
+            expect(Money.franc(5) == Money.doller(5)).to(beFalse())
         }
         
         it("testFrancMultiplication") {
-            let five: Franc = Franc(5)
-            expect(five.times(2)).to(equal(Franc(10)))
-            expect(five.times(3)).to(equal(Franc(15)))
+            let five: Money = Money.franc(5)
+            expect(five.times(2)).to(equal(Money.franc(10)))
+            expect(five.times(3)).to(equal(Money.franc(15)))
+        }
+        
+        it("testCurrency") {
+            expect("USD").to(equal(Money.doller(1).currency))
+            expect("CHF").to(equal(Money.franc(1).currency))
         }
     }
 }
