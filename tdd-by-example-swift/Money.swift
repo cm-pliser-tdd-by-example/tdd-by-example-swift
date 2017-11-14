@@ -35,6 +35,10 @@ class Money: Equatable, CustomStringConvertible {
         return Money(amount * multiplier, currency)
     }
     
+    func plus(_ addend: Money) -> Money {
+        return Money(amount + addend.amount, currency)
+    }
+    
     var description: String {
         return "\(amount) \(currency)"
     }
