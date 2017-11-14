@@ -50,5 +50,10 @@ class MoneyTest: QuickSpec {
             expect("USD").to(equal(Money.doller(1).currency))
             expect("CHF").to(equal(Money.franc(1).currency))
         }
+        
+        it("testSimpleAddition") {
+            let sum: Money = Money.doller(5).plus(Money.doller(5))
+            expect(sum).to(equal(Money.doller(10)))
+        }
     }
 }
