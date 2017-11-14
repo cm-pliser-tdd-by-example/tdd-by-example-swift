@@ -52,8 +52,11 @@ class MoneyTest: QuickSpec {
         }
         
         it("testSimpleAddition") {
-            let sum: Money = Money.doller(5).plus(Money.doller(5))
-            expect(sum).to(equal(Money.doller(10)))
+            let five: Money = Money.doller(5)
+            let sum: Expressible = five.plus(five)
+            let bank: Bank = Bank()
+            let reduced = bank.reduce(sum, "USD")
+            expect(reduced).to(equal(Money.doller(10)))
         }
     }
 }
