@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Money: Equatable {
+class Money: Equatable, CustomStringConvertible {
     
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
     let amount: Int
@@ -20,19 +20,22 @@ class Money: Equatable {
     
     // 本の中ではJavaなので、equalsを使っている
     public static func ==(lhs: Money, rhs: Money) -> Bool {
-        return (lhs.amount == rhs.amount) &&
-            String(describing: type(of: lhs)) == String(describing: type(of: rhs))
+        return (lhs.amount == rhs.amount) && (lhs.currency == rhs.currency)
     }
     
     class func doller(_ amount: Int) -> Money {
-        return Dollar(amount, "USD")
+        return Money(amount, "USD")
     }
     
     class func franc(_ amount: Int) -> Money {
-        return Franc(amount, "CHF")
+        return Money(amount, "CHF")
     }
     
-    func times(_ multiplier: Int) -> Money {
-        fatalError() // abstract
+    func times(_ multiplier: Int) -> Money? {
+        return Money(amount * multiplier, currency)
+    }
+    
+    var description: String {
+        return "\(amount) \(currency)"
     }
 }

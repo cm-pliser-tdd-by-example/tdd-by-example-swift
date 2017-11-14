@@ -22,12 +22,12 @@ import Nimble
  [ ] nullとの等価性比較
  [ ] 他のオブジェクトとの等価生比較
  [x] 5 CHF * 2 = 10 CHF
- [ ] DollarとFrancの重複
+ [x] DollarとFrancの重複
  [x] equalsの一般化
- [ ] timesの一般化
+ [x] timesの一般化
  [x] FrancとDollerを比較する
  [x] 通過の概念
- [ ] testFrancMultiplicationを削除する
+ [x] testFrancMultiplicationを削除する
  */
 
 class MoneyTest: QuickSpec {
@@ -42,15 +42,7 @@ class MoneyTest: QuickSpec {
         it("testEquality") {
             expect(Money.doller(5) == Money.doller(5)).to(beTrue())
             expect(Money.doller(5) == Money.doller(6)).to(beFalse())
-            expect(Money.franc(5) == Money.franc(5)).to(beTrue())
-            expect(Money.franc(5) == Money.franc(6)).to(beFalse())
             expect(Money.franc(5) == Money.doller(5)).to(beFalse())
-        }
-        
-        it("testFrancMultiplication") {
-            let five: Money = Money.franc(5)
-            expect(five.times(2)).to(equal(Money.franc(10)))
-            expect(five.times(3)).to(equal(Money.franc(15)))
         }
         
         it("testCurrency") {
