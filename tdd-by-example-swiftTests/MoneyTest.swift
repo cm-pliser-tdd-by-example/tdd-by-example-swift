@@ -13,6 +13,7 @@ import Nimble
  TODO
  
  [ ] $5 + 10CHF = $10
+ [ ] $5 + $5 = $10
  [x] $5 * 2 = $10
  [x] amountをprivateにする
  [x] Dollarの副作用どうする?
