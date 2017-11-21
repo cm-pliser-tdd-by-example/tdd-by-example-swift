@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Money: Equatable, CustomStringConvertible {
+class Money: Equatable, CustomStringConvertible, Expression {
     enum Currency {
         case usd
         case chf
@@ -37,6 +37,10 @@ class Money: Equatable, CustomStringConvertible {
     
     func times(_ multiplier: Int) -> Money? {
         return Money(amount * multiplier, currency)
+    }
+    
+    func plus(_ addend: Money) -> Expression {
+        return Money(amount + addend.amount, currency)
     }
     
     var description: String {

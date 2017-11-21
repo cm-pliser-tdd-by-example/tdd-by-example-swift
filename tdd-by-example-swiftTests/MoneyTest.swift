@@ -13,6 +13,7 @@ import Nimble
  TODO
  
  [ ] $5 + 10CHF = $10
+ [ ] $5 + $5 = $10
  [x] $5 * 2 = $10
  [x] amountをprivateにする
  [x] Dollarの副作用どうする?
@@ -48,6 +49,14 @@ class MoneyTest: QuickSpec {
         it("testCurrency") {
             expect(Money.Currency.usd).to(equal(Money.doller(1).currency))
             expect(Money.Currency.chf).to(equal(Money.franc(1).currency))
+        }
+        
+        it("testSimpleAddition") {
+            let five: Money = Money.doller(5)
+            let sum: tdd_by_example_swift.Expression = five.plus(five)
+            let bank: Bank = Bank()
+            let reduced = bank.reduce(sum, "USD")
+            expect(reduced).to(equal(Money.doller(10)))
         }
     }
 }
