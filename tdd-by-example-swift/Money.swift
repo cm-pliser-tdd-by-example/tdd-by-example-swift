@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Money: Equatable, CustomStringConvertible, Expressible {
+class Money: Equatable, CustomStringConvertible, Expression {
     
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
     let amount: Int
@@ -35,7 +35,7 @@ class Money: Equatable, CustomStringConvertible, Expressible {
         return Money(amount * multiplier, currency)
     }
     
-    func plus(_ addend: Money) -> Expressible {
+    func plus(_ addend: Money) -> Expression {
         return Money(amount + addend.amount, currency)
     }
     

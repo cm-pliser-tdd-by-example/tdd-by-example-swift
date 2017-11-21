@@ -53,7 +53,7 @@ class MoneyTest: QuickSpec {
         
         it("testSimpleAddition") {
             let five: Money = Money.doller(5)
-            let sum: Expressible = five.plus(five)
+            let sum: tdd_by_example_swift.Expression = five.plus(five)
             let bank: Bank = Bank()
             let reduced = bank.reduce(sum, "USD")
             expect(reduced).to(equal(Money.doller(10)))
