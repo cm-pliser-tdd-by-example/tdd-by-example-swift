@@ -8,12 +8,16 @@
 import Foundation
 
 class Money: Equatable, CustomStringConvertible {
+    enum Currency {
+        case usd
+        case chf
+    }
     
     // 本の中ではprotectedだが、swiftではできないのでpublic扱いに
     let amount: Int
-    let currency: String
+    let currency: Currency
     
-    init(_ amount: Int, _ currency: String) {
+    init(_ amount: Int, _ currency: Currency) {
         self.amount = amount
         self.currency = currency
     }
@@ -24,11 +28,11 @@ class Money: Equatable, CustomStringConvertible {
     }
     
     class func doller(_ amount: Int) -> Money {
-        return Money(amount, "USD")
+        return Money(amount, .usd)
     }
     
     class func franc(_ amount: Int) -> Money {
-        return Money(amount, "CHF")
+        return Money(amount, .chf)
     }
     
     func times(_ multiplier: Int) -> Money? {
